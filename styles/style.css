@@ -1,0 +1,147 @@
+@import url("https://fonts.googleapis.com/css2?family=Be+Vietnam:wght@400;500;700&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  font-size: 16px;
+  font-family: "Be Vietnam", sans-serif;
+}
+
+.landing {
+  background: url("../images/bg-tablet-pattern.svg");
+  background-repeat: no-repeat;
+  background-position: right;
+  background-position-x: 120%;
+  background-position-y: 165%;
+  background-size: 810px;
+  padding: 60px 150px 0px;
+}
+
+.landing-content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin: 80px 0px;
+}
+
+.info-intro h1 {
+  color: #242d52;
+  font-weight: 700;
+  font-size: 4rem;
+  line-height: 75px;
+}
+
+.info-intro p {
+  color: #9095a7;
+  font-size: 1.3rem;
+  width: 60%;
+}
+
+.info-intro p,
+.info-intro a {
+  margin-top: 50px;
+}
+
+nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+nav ul {
+  list-style-type: none;
+}
+
+nav ul li {
+  display: inline;
+}
+
+nav ul li a {
+  font-weight: 500;
+  margin: 0px 20px;
+  text-decoration: none;
+  color: #242d52;
+}
+
+nav ul li:hover {
+  opacity: 0.5;
+}
+
+.get-started {
+  background: #f25f3a;
+  color: white;
+  border-radius: 30px;
+  display: inline-block;
+  padding: 12px 30px;
+  text-decoration: none;
+  font-weight: 500;
+  font-size: 0.9rem;
+  -webkit-box-shadow: 0px 8px 15px -2px rgba(242, 95, 58, 0.5);
+          box-shadow: 0px 8px 15px -2px rgba(242, 95, 58, 0.5);
+}
+
+.get-started:hover {
+  opacity: 0.6;
+}
+
+.features-main {
+  padding: 80px 150px 300px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.features-summary h1 {
+  font-size: 2.5rem;
+  color: #242d52;
+}
+
+.features-summary p {
+  color: #9095a7;
+}
+
+.features-list-flex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-left: 200px;
+}
+
+.list-number div {
+  color: white;
+  background: #f25f3a;
+  padding: 9px 22px;
+  border-radius: 20px;
+}
+
+.list-item-container {
+  margin-left: 30px;
+}
+
+.list-item-container h5 {
+  color: #242d52;
+  font-size: 1.25rem;
+}
+
+.list-item-container p {
+  color: #9095a7;
+  font-size: 1.2rem;
+  margin: 10px 0px 45px;
+}
+/*# sourceMappingURL=style.css.map */
