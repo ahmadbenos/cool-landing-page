@@ -95,9 +95,10 @@ nav {
 }
 
 .features-main {
-  padding: 80px 150px 300px;
+  padding: 80px 150px 0px;
   display: flex;
   justify-content: space-between;
+  overflow: visible;
 }
 
 .features-summary {
@@ -108,6 +109,9 @@ nav {
 
   p {
     color: $Dark-Grayish-Blue;
+    width: 75%;
+    margin-top: 25px;
+    font-size: 1.15rem;
   }
 }
 
@@ -134,7 +138,71 @@ nav {
 
   p {
     color: $Dark-Grayish-Blue;
-    font-size: 1.2rem;
-    margin: 10px 0px 45px;
+    font-size: 1.15rem;
+    margin: 20px 0px 55px;
   }
+}
+
+.testimonials {
+  padding: 150px 0px;
+  background: url("../images/bg-tablet-pattern.svg");
+  background-repeat: no-repeat;
+  background-position-x: -30%;
+  background-position-y: -325%;
+  //background-size: 810px;
+  //overflow: hidden;
+  //position: relative;
+}
+
+.testimonials-title {
+  h1 {
+    text-align: center;
+    color: $Dark-Blue;
+    font-size: 2.5rem;
+  }
+}
+
+.testimonials-main {
+  display: flex;
+  justify-content: space-between;
+  margin: 60px 0px;
+  padding: 0px 0px 300px;
+  //position: absolute;
+  //width: 140%;
+}
+
+// .test-1 {
+//   position: relative;
+//   width: 24%;
+//   float: left;
+// }
+
+.testimonial-item {
+  background: $Very-Light-Gray;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 0px 15px;
+  padding: 60px 35px 0px;
+  position: relative;
+  .person {
+    position: absolute;
+    top: -35px;
+    img {
+      width: 80px;
+      height: 80px;
+    }
+  }
+}
+
+.person-name {
+  color: $Dark-Blue;
+  font-size: 1.3rem;
+  font-weight: 700;
+}
+
+.testimonial-text {
+  color: $Dark-Grayish-Blue;
+  font-size: 1.1rem;
 }
