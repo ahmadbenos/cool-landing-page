@@ -12,9 +12,17 @@ $Very-Dark-Blue: hsl(233, 12%, 13%);
 $Very-Pale-Red: hsl(13, 100%, 96%);
 $Very-Light-Gray: hsl(0, 0%, 98%);
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   font-size: 16px;
   font-family: "Be Vietnam", sans-serif;
+}
+
+ul {
+  list-style-type: none;
 }
 
 .landing {
@@ -60,8 +68,6 @@ nav {
   align-items: center;
 
   ul {
-    list-style-type: none;
-
     li {
       display: inline;
       a {
@@ -144,47 +150,51 @@ nav {
 }
 
 .testimonials {
-  padding: 150px 0px;
-  background: url("../images/bg-tablet-pattern.svg");
-  background-repeat: no-repeat;
-  background-position-x: -30%;
-  background-position-y: -325%;
-  //background-size: 810px;
-  //overflow: hidden;
-  //position: relative;
+  padding: 150px 0px 100px;
+  position: relative;
+  overflow: visible;
+  .center-btn {
+    text-align: center;
+    margin: 80px 0px 90px;
+    a {
+      padding: 13px 30px;
+      font-size: 1.1rem;
+    }
+  }
 }
 
 .testimonials-title {
+  position: relative;
+  z-index: 10;
   h1 {
     text-align: center;
     color: $Dark-Blue;
     font-size: 2.5rem;
+    z-index: 10;
   }
 }
 
-.testimonials-main {
-  display: flex;
-  justify-content: space-between;
-  margin: 60px 0px;
-  padding: 0px 0px 300px;
-  //position: absolute;
-  //width: 140%;
+.testimonial-bg {
+  z-index: 2;
+  position: absolute;
+  left: -460px;
+  top: -270px;
 }
 
-// .test-1 {
-//   position: relative;
-//   width: 24%;
-//   float: left;
-// }
+.swiper-container {
+  width: 100%;
+  z-index: 10;
+}
 
 .testimonial-item {
-  background: $Very-Light-Gray;
+  background: hsl(0, 0%, 97%);
   display: flex;
+  cursor: pointer;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  margin: 0px 15px;
-  padding: 60px 35px 0px;
+  padding: 60px 35px 25px;
+  margin-top: 100px;
   position: relative;
   .person {
     position: absolute;
@@ -205,4 +215,124 @@ nav {
 .testimonial-text {
   color: $Dark-Grayish-Blue;
   font-size: 1.1rem;
+  margin-top: 15px;
+  text-align: center;
+}
+
+.pre-contact {
+  background: $Bright-Red;
+  position: relative;
+  overflow: hidden;
+  //margin-bottom: 100px;
+
+  .contact-bg {
+    position: absolute;
+    top: -30px;
+    left: 80px;
+    opacity: 0.1;
+  }
+
+  .main-pre-contact {
+    display: flex;
+    justify-content: space-around;
+    padding: 50px 0px;
+    align-items: center;
+    box-shadow: none;
+    h1 {
+      color: white;
+      font-size: 3rem;
+      width: 40%;
+    }
+    .get-started {
+      background: white;
+      color: $Bright-Red;
+      font-weight: 700;
+      padding: 13px 35px;
+      font-size: 1.2rem;
+    }
+  }
+}
+
+footer {
+  background: $Very-Dark-Blue;
+}
+
+.main-contact {
+  display: flex;
+  justify-content: space-between;
+  padding: 60px 200px;
+}
+
+.footer-logos {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.footer-contact-logos {
+  img {
+    margin: 0px 5px;
+    cursor: pointer;
+  }
+}
+
+.links-flex {
+  display: flex;
+  li {
+    margin-top: 15px;
+    &.first {
+      margin-top: 0px;
+    }
+    a {
+      text-decoration: none;
+      color: $Very-Light-Gray;
+    }
+  }
+
+  .links-1 {
+    margin-right: 150px;
+  }
+
+  .links-2 {
+    margin-left: 150px;
+  }
+}
+
+.email-copyrights {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+
+  .copyrights {
+    p {
+      font-size: 0.8rem;
+      color: $Dark-Grayish-Blue;
+      float: right;
+    }
+  }
+}
+
+.email-subscription {
+  display: flex;
+  align-items: center;
+  align-self: flex-start;
+  input {
+    border: none;
+    //font-size: 1.1rem;
+    padding: 15px 10px;
+    border-radius: 25px;
+    &:focus {
+      outline: none;
+    }
+  }
+  a {
+    display: inline-block;
+    text-decoration: none;
+    margin-left: 10px;
+    color: white;
+    background: $Bright-Red;
+    padding: 11px 22px;
+    border-radius: 25px;
+  }
 }
