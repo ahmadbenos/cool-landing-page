@@ -39,6 +39,10 @@ ul {
   margin: 80px 0px;
 }
 
+.menu {
+  display: none;
+}
+
 .info-intro h1 {
   color: #242d52;
   font-weight: 700;
@@ -388,5 +392,68 @@ footer {
   background: #f25f3a;
   padding: 11px 22px;
   border-radius: 25px;
+}
+
+@media (max-width: 375px) {
+  .landing {
+    background-position-x: 120%;
+    background-position-y: 165%;
+    background-size: 810px;
+    padding: 30px 10px 0px;
+  }
+  .menu {
+    display: block;
+  }
+  .links {
+    display: none;
+  }
+  nav .get-started {
+    display: none;
+  }
+  .landing-content {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    margin: 0px;
+  }
+  .charts {
+    -webkit-transform: scale(0.6);
+            transform: scale(0.6);
+    position: relative;
+    top: -70px;
+  }
+  .info-intro {
+    position: relative;
+    top: -150px;
+  }
+  .info-intro h1 {
+    font-size: 2.5rem;
+    line-height: normal;
+    text-align: center;
+  }
+  .info-intro p {
+    color: #9095a7;
+    font-size: 1.2rem;
+    width: 100%;
+    text-align: center;
+    margin-top: 10px;
+  }
+  .info-intro a {
+    margin-top: 0px;
+  }
+  .info-intro .btn-intro {
+    text-align: center;
+    margin-top: 40px;
+  }
 }
 /*# sourceMappingURL=style.css.map */

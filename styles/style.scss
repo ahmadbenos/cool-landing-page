@@ -41,6 +41,10 @@ ul {
   margin: 80px 0px;
 }
 
+.menu {
+  display: none;
+}
+
 .info-intro {
   h1 {
     color: $Dark-Blue;
@@ -334,5 +338,69 @@ footer {
     background: $Bright-Red;
     padding: 11px 22px;
     border-radius: 25px;
+  }
+}
+
+@media (max-width: 375px) {
+  .landing {
+    background-position-x: 120%;
+    background-position-y: 165%;
+    background-size: 810px;
+    padding: 30px 10px 0px;
+  }
+
+  .menu {
+    display: block;
+  }
+
+  .links {
+    display: none;
+  }
+
+  nav {
+    .get-started {
+      display: none;
+    }
+  }
+
+  .landing-content {
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column-reverse;
+    align-items: center;
+    margin: 0px;
+  }
+
+  .charts {
+    transform: scale(0.6);
+    position: relative;
+    top: -70px;
+  }
+  .info-intro {
+    position: relative;
+    top: -150px;
+
+    h1 {
+      font-size: 2.5rem;
+      line-height: normal;
+      text-align: center;
+    }
+
+    p {
+      color: $Dark-Grayish-Blue;
+      font-size: 1.2rem;
+      width: 100%;
+      text-align: center;
+      margin-top: 10px;
+    }
+
+    a {
+      margin-top: 0px;
+    }
+
+    .btn-intro {
+      text-align: center;
+      margin-top: 40px;
+    }
   }
 }

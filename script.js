@@ -13,5 +13,9 @@ var swiper = new Swiper(".swiper-container", {
   //   },
 });
 
-let wrapper = document.querySelector(".swiper-wrapper");
+let menu = document.querySelector(".menu");
+menu.addEventListener("click", (e) => {
+  e.preventDefault();
+  console.log("Menu clicked!");
+});
 //wrapper.style.marginTop = "80px";
