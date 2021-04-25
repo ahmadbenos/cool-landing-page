@@ -19,7 +19,6 @@ html {
 body {
   font-size: 16px;
   font-family: "Be Vietnam", sans-serif;
-  overflow-x: hidden;
 }
 
 ul {
@@ -349,6 +348,12 @@ footer {
   }
 }
 
+.bottom-email-copyrights {
+  display: none;
+}
+
+// ! Media query starts here
+//! ------------------------
 @media (max-width: 375px) {
   .landing {
     background-position-x: 120%;
@@ -481,7 +486,89 @@ footer {
     }
   }
 
+  .testimonials {
+    .center-btn {
+      margin: 40px 0px 0px;
+    }
+  }
+
   .testimonial-bg {
     display: none;
+  }
+
+  .swiper-wrapper {
+    padding-bottom: 40px;
+  }
+
+  .main-pre-contact {
+    flex-direction: column;
+    padding: 80px 0px;
+    h1:nth-child(1) {
+      width: 100%;
+      text-align: center;
+    }
+
+    div:nth-child(2) {
+      margin-top: 30px;
+      .get-started {
+        padding: 13px 25px;
+      }
+    }
+  }
+
+  .main-contact {
+    flex-direction: column-reverse;
+    justify-content: space-between;
+    padding: 60px 0px 25px;
+  }
+
+  .footer-logos {
+    flex-direction: column-reverse;
+    .logo {
+      margin: 50px 0px 70px;
+      img {
+        transform: scale(1.2);
+      }
+    }
+    .footer-contact-logos {
+      img {
+        margin: 0px 20px;
+        transform: scale(1.5);
+      }
+    }
+  }
+
+  .email-subscription {
+    padding: 0px 15px;
+    align-items: center;
+    width: 100%;
+    input {
+      flex: 1;
+    }
+  }
+
+  .footer-links {
+    padding: 40px 0px;
+    .links-flex {
+      justify-content: space-around;
+      .links-1 {
+        margin-right: 0px;
+      }
+      .links-2 {
+        margin-left: 0px;
+      }
+    }
+  }
+  .copyrights {
+    display: none;
+  }
+
+  .bottom-copyrights {
+    display: block;
+    p {
+      font-size: 0.8rem;
+      color: $Dark-Grayish-Blue;
+      text-align: center;
+    }
   }
 }

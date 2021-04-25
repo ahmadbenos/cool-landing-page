@@ -1,5 +1,5 @@
 var swiper = new Swiper(".swiper-container", {
-  slidesPerView: 2.7,
+  slidesPerView: 1,
   spaceBetween: 25,
   loop: true,
   autoplay: {
@@ -7,20 +7,17 @@ var swiper = new Swiper(".swiper-container", {
     disableOnInteraction: false,
   },
   allowTouchMove: true,
+  pagination: {
+    el: ".swiper-pagination",
+    clickable: true,
+    bulletActiveClass: "pag-bullet-active",
+  },
   breakpoints: {
-    375: {
-      slidesPerView: 1,
-      pagination: {
-        el: ".swiper-pagination",
-        clickable: true,
-        bulletActiveClass: "pag-bullet-active",
-      },
+    376: {
+      slidesPerView: 2.7,
+      pagination: false,
     },
   },
-  // pagination: {
-  //   el: ".swiper-pagination",
-  //   clickable: true,
-  // },
 });
 
 let featuresInfo = [

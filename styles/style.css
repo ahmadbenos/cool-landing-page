@@ -13,7 +13,6 @@ html {
 body {
   font-size: 16px;
   font-family: "Be Vietnam", sans-serif;
-  overflow-x: hidden;
 }
 
 ul {
@@ -402,6 +401,10 @@ footer {
   border-radius: 25px;
 }
 
+.bottom-email-copyrights {
+  display: none;
+}
+
 @media (max-width: 375px) {
   .landing {
     background-position-x: 120%;
@@ -538,8 +541,95 @@ footer {
     text-align: start;
     width: 100%;
   }
+  .testimonials .center-btn {
+    margin: 40px 0px 0px;
+  }
   .testimonial-bg {
     display: none;
+  }
+  .swiper-wrapper {
+    padding-bottom: 40px;
+  }
+  .main-pre-contact {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    padding: 80px 0px;
+  }
+  .main-pre-contact h1:nth-child(1) {
+    width: 100%;
+    text-align: center;
+  }
+  .main-pre-contact div:nth-child(2) {
+    margin-top: 30px;
+  }
+  .main-pre-contact div:nth-child(2) .get-started {
+    padding: 13px 25px;
+  }
+  .main-contact {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    padding: 60px 0px 25px;
+  }
+  .footer-logos {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
+  }
+  .footer-logos .logo {
+    margin: 50px 0px 70px;
+  }
+  .footer-logos .logo img {
+    -webkit-transform: scale(1.2);
+            transform: scale(1.2);
+  }
+  .footer-logos .footer-contact-logos img {
+    margin: 0px 20px;
+    -webkit-transform: scale(1.5);
+            transform: scale(1.5);
+  }
+  .email-subscription {
+    padding: 0px 15px;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    width: 100%;
+  }
+  .email-subscription input {
+    -webkit-box-flex: 1;
+        -ms-flex: 1;
+            flex: 1;
+  }
+  .footer-links {
+    padding: 40px 0px;
+  }
+  .footer-links .links-flex {
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+  }
+  .footer-links .links-flex .links-1 {
+    margin-right: 0px;
+  }
+  .footer-links .links-flex .links-2 {
+    margin-left: 0px;
+  }
+  .copyrights {
+    display: none;
+  }
+  .bottom-copyrights {
+    display: block;
+  }
+  .bottom-copyrights p {
+    font-size: 0.8rem;
+    color: #9095a7;
+    text-align: center;
   }
 }
 /*# sourceMappingURL=style.css.map */
