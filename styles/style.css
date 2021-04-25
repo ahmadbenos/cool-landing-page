@@ -13,6 +13,7 @@ html {
 body {
   font-size: 16px;
   font-family: "Be Vietnam", sans-serif;
+  overflow-x: hidden;
 }
 
 ul {
@@ -133,6 +134,8 @@ nav ul li:hover {
   display: -ms-flexbox;
   display: flex;
   margin-left: 200px;
+  position: relative;
+  z-index: 10;
 }
 
 .list-number div {
@@ -239,6 +242,11 @@ nav ul li:hover {
   font-size: 1.1rem;
   margin-top: 15px;
   text-align: center;
+}
+
+.pag-bullet-active {
+  background: #f25f3a;
+  opacity: 1;
 }
 
 .pre-contact {
@@ -454,6 +462,84 @@ footer {
   .info-intro .btn-intro {
     text-align: center;
     margin-top: 40px;
+  }
+  .info-intro .btn-intro .get-started {
+    padding: 15px 35px;
+    font-size: 1.1rem;
+  }
+  .features-main {
+    padding: 0px 10px;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+    overflow: visible;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .features-summary h1 {
+    text-align: center;
+  }
+  .features-summary p {
+    text-align: center;
+    width: 92%;
+  }
+  .features-list {
+    overflow: hidden;
+  }
+  .features-list-flex {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    margin-left: 0px;
+    margin-top: 20px;
+    width: 100%;
+  }
+  .features-list-flex.first {
+    margin-top: 70px;
+  }
+  .list-number {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    background: #ffefeb;
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+  }
+  .list-number div {
+    color: white;
+    background: #f25f3a;
+    padding: 9px 22px;
+    border-radius: 20px;
+  }
+  .list-number h5 {
+    font-size: 1.1rem;
+    margin-left: 11px;
+    white-space: nowrap;
+  }
+  .list-item-container {
+    margin-left: 0px;
+  }
+  .list-item-container p {
+    color: #9095a7;
+    font-size: 1.1rem;
+    margin: 20px 0px 30px;
+    text-align: start;
+    width: 100%;
+  }
+  .testimonial-bg {
+    display: none;
   }
 }
 /*# sourceMappingURL=style.css.map */

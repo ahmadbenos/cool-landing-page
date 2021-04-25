@@ -19,6 +19,7 @@ html {
 body {
   font-size: 16px;
   font-family: "Be Vietnam", sans-serif;
+  overflow-x: hidden;
 }
 
 ul {
@@ -128,6 +129,8 @@ nav {
 .features-list-flex {
   display: flex;
   margin-left: 200px;
+  position: relative;
+  z-index: 10;
 }
 
 .list-number {
@@ -221,6 +224,11 @@ nav {
   font-size: 1.1rem;
   margin-top: 15px;
   text-align: center;
+}
+
+.pag-bullet-active {
+  background: $Bright-Red;
+  opacity: 1;
 }
 
 .pre-contact {
@@ -401,6 +409,79 @@ footer {
     .btn-intro {
       text-align: center;
       margin-top: 40px;
+
+      .get-started {
+        padding: 15px 35px;
+        font-size: 1.1rem;
+      }
     }
+  }
+
+  .features-main {
+    padding: 0px 10px;
+    flex-direction: column;
+    justify-content: flex-start;
+    overflow: visible;
+    align-items: center;
+  }
+
+  .features-summary {
+    h1 {
+      text-align: center;
+    }
+
+    p {
+      text-align: center;
+      width: 92%;
+    }
+  }
+
+  .features-list {
+    overflow: hidden;
+  }
+
+  .features-list-flex {
+    display: flex;
+    flex-direction: column;
+    margin-left: 0px;
+    margin-top: 20px;
+    width: 100%;
+    &.first {
+      margin-top: 70px;
+    }
+  }
+
+  .list-number {
+    display: flex;
+    align-items: center;
+    background: $Very-Pale-Red;
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+    div {
+      color: white;
+      background: $Bright-Red;
+      padding: 9px 22px;
+      border-radius: 20px;
+    }
+    h5 {
+      font-size: 1.1rem;
+      margin-left: 11px;
+      white-space: nowrap;
+    }
+  }
+
+  .list-item-container {
+    margin-left: 0px;
+    p {
+      color: $Dark-Grayish-Blue;
+      font-size: 1.1rem;
+      margin: 20px 0px 30px;
+      text-align: start;
+      width: 100%;
+    }
+  }
+
+  .testimonial-bg {
+    display: none;
   }
 }
