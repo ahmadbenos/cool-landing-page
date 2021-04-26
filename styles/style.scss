@@ -46,6 +46,8 @@ ul {
 }
 
 .info-intro {
+  position: relative;
+  z-index: 10;
   h1 {
     color: $Dark-Blue;
     font-weight: 700;
@@ -115,6 +117,8 @@ nav {
   h1 {
     font-size: 2.5rem;
     color: $Dark-Blue;
+    position: relative;
+    z-index: 10;
   }
 
   p {
@@ -356,9 +360,9 @@ footer {
 //! ------------------------
 @media (max-width: 375px) {
   .landing {
-    background-position-x: 120%;
-    background-position-y: 165%;
-    background-size: 810px;
+    background-position-x: -26%;
+    background-position-y: -48%;
+    background-size: 561px;
     padding: 30px 10px 0px;
   }
 
@@ -493,7 +497,6 @@ footer {
   }
 
   .testimonial-bg {
-    display: none;
   }
 
   .swiper-wrapper {
@@ -569,6 +572,25 @@ footer {
       font-size: 0.8rem;
       color: $Dark-Grayish-Blue;
       text-align: center;
+    }
+  }
+
+  .testimonial-bg {
+    left: -18px;
+    top: -1648px;
+    img {
+      transform: scale(0.45);
+    }
+  }
+
+  .pre-contact {
+    .contact-bg {
+      position: absolute;
+      top: -86px;
+      left: -534px;
+      img {
+        transform: scale(0.65);
+      }
     }
   }
 }

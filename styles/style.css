@@ -43,6 +43,11 @@ ul {
   display: none;
 }
 
+.info-intro {
+  position: relative;
+  z-index: 10;
+}
+
 .info-intro h1 {
   color: #242d52;
   font-weight: 700;
@@ -119,6 +124,8 @@ nav ul li:hover {
 .features-summary h1 {
   font-size: 2.5rem;
   color: #242d52;
+  position: relative;
+  z-index: 10;
 }
 
 .features-summary p {
@@ -407,9 +414,9 @@ footer {
 
 @media (max-width: 375px) {
   .landing {
-    background-position-x: 120%;
-    background-position-y: 165%;
-    background-size: 810px;
+    background-position-x: -26%;
+    background-position-y: -48%;
+    background-size: 561px;
     padding: 30px 10px 0px;
   }
   .menu {
@@ -544,9 +551,6 @@ footer {
   .testimonials .center-btn {
     margin: 40px 0px 0px;
   }
-  .testimonial-bg {
-    display: none;
-  }
   .swiper-wrapper {
     padding-bottom: 40px;
   }
@@ -630,6 +634,23 @@ footer {
     font-size: 0.8rem;
     color: #9095a7;
     text-align: center;
+  }
+  .testimonial-bg {
+    left: -18px;
+    top: -1648px;
+  }
+  .testimonial-bg img {
+    -webkit-transform: scale(0.45);
+            transform: scale(0.45);
+  }
+  .pre-contact .contact-bg {
+    position: absolute;
+    top: -86px;
+    left: -534px;
+  }
+  .pre-contact .contact-bg img {
+    -webkit-transform: scale(0.65);
+            transform: scale(0.65);
   }
 }
 /*# sourceMappingURL=style.css.map */
