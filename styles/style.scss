@@ -19,6 +19,11 @@ html {
 body {
   font-size: 16px;
   font-family: "Be Vietnam", sans-serif;
+  overflow: auto;
+}
+
+body.active {
+  overflow: hidden;
 }
 
 ul {
@@ -352,8 +357,44 @@ footer {
   }
 }
 
-.bottom-email-copyrights {
+.bottom-copyrights {
   display: none;
+}
+
+.mobile-menu {
+  display: none;
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 77px;
+  margin-left: auto;
+  margin-right: auto;
+  width: 320px;
+  background: white;
+  z-index: 30;
+}
+
+.mobile-menu.active {
+  display: block;
+  box-shadow: -1px 0px 20px 0px #888888;
+}
+
+.main-menu {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  padding: 50px 0px;
+
+  a {
+    margin-top: 28px;
+    font-weight: 700;
+    color: $Dark-Blue;
+    text-decoration: none;
+  }
+
+  a.first {
+    margin-top: 0px;
+  }
 }
 
 // ! Media query starts here
@@ -368,6 +409,10 @@ footer {
 
   .menu {
     display: block;
+  }
+
+  .menu.active {
+    content: url("../images/icon-close.svg");
   }
 
   .links {
@@ -496,9 +541,6 @@ footer {
     }
   }
 
-  .testimonial-bg {
-  }
-
   .swiper-wrapper {
     padding-bottom: 40px;
   }
@@ -576,11 +618,12 @@ footer {
   }
 
   .testimonial-bg {
-    left: -18px;
-    top: -1648px;
-    img {
-      transform: scale(0.45);
-    }
+    display: none;
+    // left: -18px;
+    // top: -1648px;
+    // img {
+    //   transform: scale(0.45);
+    // }
   }
 
   .pre-contact {

@@ -55,5 +55,8 @@ if (window.matchMedia("(max-width: 375px)").matches) {
 let menu = document.querySelector(".menu");
 menu.addEventListener("click", (e) => {
   e.preventDefault();
-  console.log("Menu clicked!");
+  let mobileMenu = document.querySelector(".mobile-menu");
+  menu.classList.toggle("active");
+  mobileMenu.classList.toggle("active");
+  document.body.classList.toggle("active");
 });
