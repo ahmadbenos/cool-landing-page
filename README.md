@@ -1,6 +1,6 @@
 # Cool Landing page
 
-[Click here to view live demo](https://choosealicense.com/licenses/mit/)
+[Click here to view live demo](https://ahmadbenos.github.io/cool-landing-page/)
 
 **refresh demo page if you're viewing responsive design on a pc since there is some matchMedia in javascript**
 
