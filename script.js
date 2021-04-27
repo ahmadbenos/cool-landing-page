@@ -1,3 +1,5 @@
+//initialize the swiper instance
+//api docs in swiper.js
 var swiper = new Swiper(".swiper-container", {
   slidesPerView: 1,
   spaceBetween: 25,
